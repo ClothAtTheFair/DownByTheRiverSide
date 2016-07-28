@@ -1,20 +1,24 @@
-.nav a
-{
-	color: #5a5a5a;
-	font-size: 11;
-	font-weight: bold;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-transform: uppercase;
+#chalkboard {
+  position: absolute;
 }
 
-.nav li
-{
-	display: inline;
+#chalkboard,
+#canvas,
+#output {
+  width: 768px;
+  height: 690px;
 }
 
-.table, th, td{
-	border: 1px solid black;
+@media only screen and (orientation:landscape) {
+  #chalkboard {
+    top: 0;
+    left: 127px;
+  }
+}
+
+@media only screen and (orientation:portrait) {
+  #chalkboard {
+    top: 129px;
+    left: 0;
+  }
 }
